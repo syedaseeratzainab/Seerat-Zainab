@@ -1,0 +1,12 @@
+Python is a popular programming language used in AI projects.
+Artificial Intelligence allows computers to perform intelligent tasks.
+RAG stands for Retrieval Augmented Generation.
+RAG systems retrieve useful information from documents.
+Embeddings represent text as numerical vectors.
+Vector databases store embeddings for similarity search.
+Documents contain useful information for RAG applications.
+APIs allow different software applications to communicate.
+Python provides useful libraries for AI and APIs.
+Vector databases help RAG systems find relevant documents.
+Embeddings help compare different pieces of text.
+RAG can improve answers by using relevant document information.
