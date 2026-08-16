@@ -1,0 +1,94 @@
+
+============================================================
+Search keyword: python
+Timestamp: 2026-08-17 03:45:08
+Matching files: 3
+Total matches: 15
+============================================================
+document1.txt | Line 1 | Python is a popular programming language used in many areas of computer science.
+document1.txt | Line 2 | Python is known for its simple syntax and readability.
+document1.txt | Line 3 | Many beginners choose Python as their first programming language.
+document1.txt | Line 4 | Python can be used to create websites, applications, automation scripts, and data analysis programs.
+document1.txt | Line 5 | Python is also widely used in artificial intelligence and machine learning.
+document1.txt | Line 6 | Learning Python helps students understand important programming concepts such as variables, conditions, loops, lists, dictionaries, and functions.
+document1.txt | Line 7 | Python programs can work with different types of files, including text files.
+document1.txt | Line 8 | A Python program can read a document and search for specific words or phrases.
+document1.txt | Line 9 | Python provides many useful built-in functions that make programming easier.
+document1.txt | Line 13 | Students can improve their Python skills by practicing small programming problems.
+document1.txt | Line 15 | Python is an important language for students who want to learn artificial intelligence.
+document2.txt | Line 7 | Python is commonly used for artificial intelligence projects.
+document2.txt | Line 8 | Python has many libraries that help developers build AI and machine learning applications.
+document2.txt | Line 15 | Understanding Python, data structures, and algorithms provides a strong foundation for learning AI.
+document3.txt | Line 6 | Python can be used to create different parts of a RAG application.
+
+============================================================
+Search keyword: python
+Timestamp: 2026-08-17 03:52:45
+Matching files: 3
+Total matches: 15
+============================================================
+document1.txt | Line 1 | Python is a popular programming language used in many areas of computer science.
+document1.txt | Line 2 | Python is known for its simple syntax and readability.
+document1.txt | Line 3 | Many beginners choose Python as their first programming language.
+document1.txt | Line 4 | Python can be used to create websites, applications, automation scripts, and data analysis programs.
+document1.txt | Line 5 | Python is also widely used in artificial intelligence and machine learning.
+document1.txt | Line 6 | Learning Python helps students understand important programming concepts such as variables, conditions, loops, lists, dictionaries, and functions.
+document1.txt | Line 7 | Python programs can work with different types of files, including text files.
+document1.txt | Line 8 | A Python program can read a document and search for specific words or phrases.
+document1.txt | Line 9 | Python provides many useful built-in functions that make programming easier.
+document1.txt | Line 13 | Students can improve their Python skills by practicing small programming problems.
+document1.txt | Line 15 | Python is an important language for students who want to learn artificial intelligence.
+document2.txt | Line 7 | Python is commonly used for artificial intelligence projects.
+document2.txt | Line 8 | Python has many libraries that help developers build AI and machine learning applications.
+document2.txt | Line 15 | Understanding Python, data structures, and algorithms provides a strong foundation for learning AI.
+document3.txt | Line 6 | Python can be used to create different parts of a RAG application.
+
+======================================================================
+Search keyword: python
+Timestamp: 2026-08-17 04:04:34
+Documents folder: documents
+Exact-word search: True
+Matching files: 3
+Total matches: 15
+======================================================================
+document1.txt | Line 1 | Occurrences: 1 | Python is a popular programming language used in many areas of computer science.
+document1.txt | Line 2 | Occurrences: 1 | Python is known for its simple syntax and readability.
+document1.txt | Line 3 | Occurrences: 1 | Many beginners choose Python as their first programming language.
+document1.txt | Line 4 | Occurrences: 1 | Python can be used to create websites, applications, automation scripts, and data analysis programs.
+document1.txt | Line 5 | Occurrences: 1 | Python is also widely used in artificial intelligence and machine learning.
+document1.txt | Line 6 | Occurrences: 1 | Learning Python helps students understand important programming concepts such as variables, conditions, loops, lists, dictionaries, and functions.
+document1.txt | Line 7 | Occurrences: 1 | Python programs can work with different types of files, including text files.
+document1.txt | Line 8 | Occurrences: 1 | A Python program can read a document and search for specific words or phrases.
+document1.txt | Line 9 | Occurrences: 1 | Python provides many useful built-in functions that make programming easier.
+document1.txt | Line 13 | Occurrences: 1 | Students can improve their Python skills by practicing small programming problems.
+document1.txt | Line 15 | Occurrences: 1 | Python is an important language for students who want to learn artificial intelligence.
+document2.txt | Line 7 | Occurrences: 1 | Python is commonly used for artificial intelligence projects.
+document2.txt | Line 8 | Occurrences: 1 | Python has many libraries that help developers build AI and machine learning applications.
+document2.txt | Line 15 | Occurrences: 1 | Understanding Python, data structures, and algorithms provides a strong foundation for learning AI.
+document3.txt | Line 6 | Occurrences: 1 | Python can be used to create different parts of a RAG application.
+
+======================================================================
+Search keyword: and
+Timestamp: 2026-08-17 04:12:13
+Documents folder: documents
+Exact-word search: True
+Matching files: 3
+Total matches: 17
+======================================================================
+document1.txt | Line 2 | Occurrences: 1 | Python is known for its simple syntax and readability.
+document1.txt | Line 4 | Occurrences: 1 | Python can be used to create websites, applications, automation scripts, and data analysis programs.
+document1.txt | Line 5 | Occurrences: 1 | Python is also widely used in artificial intelligence and machine learning.
+document1.txt | Line 6 | Occurrences: 1 | Learning Python helps students understand important programming concepts such as variables, conditions, loops, lists, dictionaries, and functions.
+document1.txt | Line 8 | Occurrences: 1 | A Python program can read a document and search for specific words or phrases.
+document1.txt | Line 10 | Occurrences: 1 | Functions help programmers organize their code into smaller and reusable sections.
+document1.txt | Line 11 | Occurrences: 1 | Lists can store multiple values, while dictionaries can store information using keys and values.
+document1.txt | Line 14 | Occurrences: 1 | Programming requires practice, patience, and logical thinking.
+document2.txt | Line 3 | Occurrences: 1 | AI can be used in education, healthcare, transportation, communication, and many other fields.
+document2.txt | Line 8 | Occurrences: 1 | Python has many libraries that help developers build AI and machine learning applications.
+document2.txt | Line 10 | Occurrences: 1 | Computer vision allows machines to process and understand images.
+document2.txt | Line 11 | Occurrences: 1 | AI systems can help people solve problems and automate repetitive tasks.
+document2.txt | Line 14 | Occurrences: 1 | Students interested in AI should first learn programming and basic computer science concepts.
+document2.txt | Line 15 | Occurrences: 1 | Understanding Python, data structures, and algorithms provides a strong foundation for learning AI.
+document3.txt | Line 9 | Occurrences: 1 | A search program can examine multiple files and identify which files contain a keyword.
+document3.txt | Line 12 | Occurrences: 1 | Vector databases can be used to store and retrieve these embeddings.
+document3.txt | Line 14 | Occurrences: 1 | Learning how to read files and search their contents is an important programming skill.

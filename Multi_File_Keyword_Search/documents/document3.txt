@@ -1,0 +1,15 @@
+Retrieval Augmented Generation is commonly known as RAG.
+RAG is an approach used in modern artificial intelligence applications.
+A RAG system can retrieve relevant information from a collection of documents.
+The retrieved information can then be provided to a language model.
+RAG can help an AI application use information from external documents.
+Python can be used to create different parts of a RAG application.
+A simple document search system can be an early step toward understanding RAG.
+Keyword searching allows a program to find specific words inside text documents.
+A search program can examine multiple files and identify which files contain a keyword.
+The program can also display the line number where the keyword was found.
+More advanced RAG systems may use embeddings to represent text as numerical vectors.
+Vector databases can be used to store and retrieve these embeddings.
+RAG is useful for applications that need to answer questions using a specific collection of information.
+Learning how to read files and search their contents is an important programming skill.
+Understanding document retrieval can help students move toward more advanced artificial intelligence projects.
