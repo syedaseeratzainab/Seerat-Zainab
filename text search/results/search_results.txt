@@ -1,0 +1,20 @@
+Search keyword: python
+Matching files: 3
+Found in: documents\file1.txt
+Found in: documents\file2.txt
+Found in: documents\file3.txt
+
+Search keyword: rag
+Matching files: 2
+Found in: documents\file2.txt
+Found in: documents\file3.txt
+
+Search keyword: ai
+Matching files: 2
+Found in: documents\file1.txt
+Found in: documents\file2.txt
+
+Search keyword: java
+Matching files: 0
+No matching files found.
+
