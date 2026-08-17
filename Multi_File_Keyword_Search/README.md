@@ -1,10 +1,10 @@
 # Multi-File Keyword Search Tool
 
-A Python-based tool that searches for keywords across multiple text files. It displays matching lines, counts occurrences, saves search results, and keeps a history of searches.
+A Python-based tool that searches for keywords across multiple **TXT, DOCX, and PDF files**. It displays matching content, counts occurrences, saves search results, and keeps a history of searches.
 
 ## Features
 
-- Searches multiple `.txt` files
+- Searches multiple `.txt`, `.docx`, and `.pdf` files
 - Case-insensitive keyword searching
 - Exact-word search option
 - Displays filename, line number, and matching text
@@ -20,6 +20,7 @@ A Python-based tool that searches for keywords across multiple text files. It di
 - Provides a colored terminal interface
 - Allows repeated searches
 - Allows the user to type `exit` to quit
+- Supports reading content from DOCX and PDF files
 
 ## Project Structure
 
@@ -29,9 +30,9 @@ Multi_File_Keyword_Search/
 ├── .venv/
 │
 ├── documents/
-│   ├── document1.txt
-│   ├── document2.txt
-│   └── document3.txt
+│   ├── Multi_File_Keyword_Search_Tool_Project_Documentation.docx
+│   ├── Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx
+│   └── file3_web_development.pdf
 │
 ├── results/
 │   ├── search_results.txt
@@ -42,3 +43,9 @@ Multi_File_Keyword_Search/
 ├── file_utils.py
 ├── requirements.txt
 └── README.md
+
+## Libraries Used
+
+- **colorama** – for colored terminal output
+- **python-docx** – for reading DOCX files
+- **pypdf** – for reading PDF files
