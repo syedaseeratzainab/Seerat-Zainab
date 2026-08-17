@@ -1,10 +1,12 @@
 import os
 from datetime import datetime
 
-from colorama import Fore, Style, init
+from colorama import Fore, init
 
-from file_utils import get_text_files, get_extension_summary
-from text_utils import search_keyword_in_file
+from file_utils import (
+    get_document_files,
+    search_keyword_in_file
+)
 
 
 # Initialize colored terminal output
@@ -23,7 +25,12 @@ def save_results(
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    with open("results/search_results.txt", "a", encoding="utf-8") as file:
+    with open(
+        "results/search_results.txt",
+        "a",
+        encoding="utf-8"
+    ) as file:
+
         file.write("\n" + "=" * 70 + "\n")
         file.write(f"Search keyword: {keyword}\n")
         file.write(f"Timestamp: {timestamp}\n")
@@ -33,10 +40,12 @@ def save_results(
         file.write(f"Total matches: {total_matches}\n")
         file.write("=" * 70 + "\n")
 
-        for filename, line_number, line_text, occurrence_count in results:
+        for result in results:
             file.write(
-                f"{filename} | Line {line_number} | "
-                f"Occurrences: {occurrence_count} | {line_text}\n"
+                f"{result['file']} | "
+                f"{result['location']} | "
+                f"Occurrences: {result['count']} | "
+                f"{result['text']}\n"
             )
 
 
@@ -45,46 +54,66 @@ def save_search_history(keyword, folder_path, exact_word):
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    with open("results/search_history.txt", "a", encoding="utf-8") as file:
+    with open(
+        "results/search_history.txt",
+        "a",
+        encoding="utf-8"
+    ) as file:
+
         file.write(
-            f"{timestamp} | Keyword: {keyword} | "
-            f"Folder: {folder_path} | Exact-word: {exact_word}\n"
+            f"{timestamp} | "
+            f"Keyword: {keyword} | "
+            f"Folder: {folder_path} | "
+            f"Exact-word: {exact_word}\n"
         )
 
 
 def show_extension_summary(folder_path):
-    """Display the file-extension summary."""
+    """Display the number of DOCX and PDF files."""
 
-    extension_summary = get_extension_summary(folder_path)
+    document_files = get_document_files(folder_path)
+
+    docx_count = 0
+    pdf_count = 0
+
+    for file_path in document_files:
+
+        if file_path.lower().endswith(".docx"):
+            docx_count += 1
+
+        elif file_path.lower().endswith(".pdf"):
+            pdf_count += 1
 
     print(Fore.CYAN + "\nFile Extension Summary")
     print("-" * 30)
 
-    if not extension_summary:
-        print(Fore.YELLOW + "No files found.")
+    if docx_count == 0 and pdf_count == 0:
+        print(Fore.YELLOW + "No DOCX or PDF files found.")
         return
 
-    for extension, count in sorted(extension_summary.items()):
-        print(Fore.GREEN + f"{extension}: {count} file(s)")
+    print(Fore.GREEN + f".docx: {docx_count} file(s)")
+    print(Fore.GREEN + f".pdf: {pdf_count} file(s)")
 
 
 def perform_search(keyword, folder_path, exact_word):
-    """Search for the keyword in all text files."""
+    """Search for the keyword in all DOCX and PDF files."""
 
-    text_files = get_text_files(folder_path)
+    document_files = get_document_files(folder_path)
 
-    if not text_files:
+    if not document_files:
         print(
             Fore.RED
-            + "No .txt files were found in the selected folder."
+            + "No .docx or .pdf files were found "
+            + "in the selected folder."
         )
         return
 
     results = []
-    matching_files = 0
+    matching_files = set()
     total_matches = 0
 
-    for file_path in text_files:
+    for file_path in document_files:
+
         matches = search_keyword_in_file(
             file_path,
             keyword,
@@ -92,24 +121,26 @@ def perform_search(keyword, folder_path, exact_word):
         )
 
         if matches:
-            matching_files += 1
-            total_matches += sum(
-                match[2] for match in matches
-            )
 
             filename = os.path.basename(file_path)
 
-            for line_number, line_text, occurrence_count in matches:
-                results.append(
-                    (
-                        filename,
-                        line_number,
-                        line_text,
-                        occurrence_count
-                    )
-                )
+            matching_files.add(filename)
+
+            for match in matches:
+
+                result = {
+                    "file": filename,
+                    "location": match["location"],
+                    "text": match["text"],
+                    "count": match["count"]
+                }
+
+                results.append(result)
+
+                total_matches += match["count"]
 
     if not results:
+
         print(
             Fore.YELLOW
             + f"\nNo matches found for '{keyword}'."
@@ -123,29 +154,37 @@ def perform_search(keyword, folder_path, exact_word):
 
         return
 
-    # Sort results by filename and then by line number
-    results.sort(key=lambda result: (result[0], result[1]))
+    # Sort results by filename and location
+    results.sort(
+        key=lambda result: (
+            result["file"],
+            result["location"]
+        )
+    )
 
     print(Fore.CYAN + "\nSearch Results")
-    print("-" * 75)
+    print("-" * 80)
 
-    for filename, line_number, line_text, occurrence_count in results:
+    for result in results:
+
         print(
             Fore.GREEN
-            + f"{filename}"
+            + f"{result['file']}"
             + Fore.WHITE
-            + f" | Line {line_number}"
+            + f" | {result['location']}"
             + Fore.MAGENTA
-            + f" | Occurrences: {occurrence_count}"
+            + f" | Occurrences: {result['count']}"
             + Fore.WHITE
-            + f" | {line_text}"
+            + f" | {result['text']}"
         )
 
-    print("-" * 75)
+    print("-" * 80)
+
     print(
         Fore.CYAN
-        + f"Matching files: {matching_files}"
+        + f"Matching files: {len(matching_files)}"
     )
+
     print(
         Fore.CYAN
         + f"Total matches: {total_matches}"
@@ -154,7 +193,7 @@ def perform_search(keyword, folder_path, exact_word):
     save_results(
         keyword,
         results,
-        matching_files,
+        len(matching_files),
         total_matches,
         folder_path,
         exact_word
@@ -170,6 +209,7 @@ def perform_search(keyword, folder_path, exact_word):
         Fore.GREEN
         + "\nResults saved to results/search_results.txt"
     )
+
     print(
         Fore.GREEN
         + "Search added to results/search_history.txt"
@@ -182,6 +222,7 @@ def choose_documents_folder():
     default_folder = "documents"
 
     print(Fore.CYAN + "\nDocuments Folder")
+
     print(
         Fore.WHITE
         + f"Press Enter to use the default folder: {default_folder}"
@@ -195,14 +236,17 @@ def choose_documents_folder():
         folder_path = default_folder
 
     if not os.path.exists(folder_path):
+
         print(
             Fore.RED
             + "The selected folder does not exist."
         )
+
         print(
             Fore.YELLOW
             + "Using the default documents folder instead."
         )
+
         folder_path = default_folder
 
     return folder_path
@@ -214,17 +258,25 @@ def main():
     os.makedirs("results", exist_ok=True)
 
     print(Fore.CYAN + "=" * 70)
+
     print(
         Fore.CYAN
         + "           MULTI-FILE KEYWORD SEARCH TOOL"
     )
+
     print(Fore.CYAN + "=" * 70)
+
+    print(
+        Fore.WHITE
+        + "This version searches DOCX and PDF files."
+    )
 
     folder_path = choose_documents_folder()
 
     show_extension_summary(folder_path)
 
     while True:
+
         keyword = input(
             Fore.WHITE
             + "\nEnter a keyword "
@@ -232,14 +284,21 @@ def main():
         ).strip()
 
         if keyword.lower() == "exit":
+
             print(
                 Fore.GREEN
                 + "\nThank you for using the Keyword Search Tool!"
             )
+
             break
 
         if keyword == "":
-            print(Fore.YELLOW + "Please enter a keyword.")
+
+            print(
+                Fore.YELLOW
+                + "Please enter a keyword."
+            )
+
             continue
 
         exact_choice = input(

@@ -92,3 +92,414 @@ document2.txt | Line 15 | Occurrences: 1 | Understanding Python, data structures
 document3.txt | Line 9 | Occurrences: 1 | A search program can examine multiple files and identify which files contain a keyword.
 document3.txt | Line 12 | Occurrences: 1 | Vector databases can be used to store and retrieve these embeddings.
 document3.txt | Line 14 | Occurrences: 1 | Learning how to read files and search their contents is an important programming skill.
+
+======================================================================
+Search keyword: python
+Timestamp: 2026-08-17 10:49:27
+Documents folder: documents
+Exact-word search: True
+Matching files: 3
+Total matches: 48
+======================================================================
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 104 | Occurrences: 1 | The application uses Python substring membership rather than exact-word matching, regular expressions, or semantic search. Therefore, a keyword matches whenever its characters appear anywhere inside the lowercased line.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 107 | Occurrences: 1 | All matches are collected in a Python list. Each list element is a dictionary containing three fields:
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 118 | Occurrences: 1 | 1. file1.txt | Line 3
+   Python is commonly used for AI.
+
+Matching files: 1
+Total matches: 1
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 121 | Occurrences: 4 | MULTI-FILE KEYWORD SEARCH RESULTS
+========================================
+Keyword: python
+Searched at: 2026-08-15 08:30:00
+Matching files: 2
+Total matches: 3
+
+1. file1.txt | Line 1
+   Python is a programming language.
+
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 125 | Occurrences: 3 | documents/file1.txt
+Python is a programming language.
+Java is another programming language.
+Python is commonly used for AI.
+
+documents/file2.txt
+Machine learning can be implemented using Python.
+
+documents/file3.txt
+HTML is used to structure websites.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 127 | Occurrences: 1 | python main.py
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 129 | Occurrences: 4 | === Multi-File Keyword Search Tool ===
+Type 'exit' to close the program.
+
+Enter a keyword: python
+
+Files checked: 3
+
+Search results:
+1. file1.txt | Line 1
+   Python is a programming language.
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+
+Matching files: 2
+Total matches: 3
+
+Results saved to: results/search_results.txt
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 130 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 158 | Occurrences: 1 | The Multi-File Keyword Search Tool is a compact but complete example of a modular Python application. It solves a clear problem: finding a keyword across several text files without manually opening each file. The program validates user input, discovers text files, searches them line by line, records structured match data, displays useful statistics, saves a report, and handles common file-related errors.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 19 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 25 | Occurrences: 1 | The Multi-File Keyword Search Tool is a Python command-line application that allows a user to search for a specific keyword across multiple text files. Instead of opening files one by one, the program automatically scans every valid .txt file inside a predefined documents folder, reads each file line by line, finds lines containing the requested keyword, and presents the matching information in a clear format.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 3 | Occurrences: 1 | A modular Python command-line application for searching keywords across multiple text files
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 79 | Occurrences: 2 | This removes leading/trailing whitespace and converts the input to lowercase. For example, "  PYTHON  " becomes "python".
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 91 | Occurrences: 1 | {
+    'filename': 'file1.txt',
+    'line_number': 12,
+    'text': 'Python is widely used for AI.'
+}
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 104 | Occurrences: 1 | The application uses Python substring membership rather than exact-word matching, regular expressions, or semantic search. Therefore, a keyword matches whenever its characters appear anywhere inside the lowercased line.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 107 | Occurrences: 1 | All matches are collected in a Python list. Each list element is a dictionary containing three fields:
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 118 | Occurrences: 1 | 1. file1.txt | Line 3
+   Python is commonly used for AI.
+
+Matching files: 1
+Total matches: 1
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 121 | Occurrences: 4 | MULTI-FILE KEYWORD SEARCH RESULTS
+========================================
+Keyword: python
+Searched at: 2026-08-15 08:30:00
+Matching files: 2
+Total matches: 3
+
+1. file1.txt | Line 1
+   Python is a programming language.
+
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 125 | Occurrences: 3 | documents/file1.txt
+Python is a programming language.
+Java is another programming language.
+Python is commonly used for AI.
+
+documents/file2.txt
+Machine learning can be implemented using Python.
+
+documents/file3.txt
+HTML is used to structure websites.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 127 | Occurrences: 1 | python main.py
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 129 | Occurrences: 4 | === Multi-File Keyword Search Tool ===
+Type 'exit' to close the program.
+
+Enter a keyword: python
+
+Files checked: 3
+
+Search results:
+1. file1.txt | Line 1
+   Python is a programming language.
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+
+Matching files: 2
+Total matches: 3
+
+Results saved to: results/search_results.txt
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 130 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 158 | Occurrences: 1 | The Multi-File Keyword Search Tool is a compact but complete example of a modular Python application. It solves a clear problem: finding a keyword across several text files without manually opening each file. The program validates user input, discovers text files, searches them line by line, records structured match data, displays useful statistics, saves a report, and handles common file-related errors.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 19 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 25 | Occurrences: 1 | The Multi-File Keyword Search Tool is a Python command-line application that allows a user to search for a specific keyword across multiple text files. Instead of opening files one by one, the program automatically scans every valid .txt file inside a predefined documents folder, reads each file line by line, finds lines containing the requested keyword, and presents the matching information in a clear format.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 3 | Occurrences: 1 | A modular Python command-line application for searching keywords across multiple text files
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 79 | Occurrences: 2 | This removes leading/trailing whitespace and converts the input to lowercase. For example, "  PYTHON  " becomes "python".
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 91 | Occurrences: 1 | {
+    'filename': 'file1.txt',
+    'line_number': 12,
+    'text': 'Python is widely used for AI.'
+}
+file3_web_development.pdf | Page 1 | Occurrences: 1 | Many back-end services are written in languages such as JavaScript, Java, Ruby, or Python, using
+file3_web_development.pdf | Page 1 | Occurrences: 1 | Python-based frameworks such as Django and Flask are popular choices for building back-end APIs
+
+======================================================================
+Search keyword: python
+Timestamp: 2026-08-17 10:50:11
+Documents folder: documents
+Exact-word search: True
+Matching files: 3
+Total matches: 48
+======================================================================
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 104 | Occurrences: 1 | The application uses Python substring membership rather than exact-word matching, regular expressions, or semantic search. Therefore, a keyword matches whenever its characters appear anywhere inside the lowercased line.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 107 | Occurrences: 1 | All matches are collected in a Python list. Each list element is a dictionary containing three fields:
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 118 | Occurrences: 1 | 1. file1.txt | Line 3
+   Python is commonly used for AI.
+
+Matching files: 1
+Total matches: 1
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 121 | Occurrences: 4 | MULTI-FILE KEYWORD SEARCH RESULTS
+========================================
+Keyword: python
+Searched at: 2026-08-15 08:30:00
+Matching files: 2
+Total matches: 3
+
+1. file1.txt | Line 1
+   Python is a programming language.
+
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 125 | Occurrences: 3 | documents/file1.txt
+Python is a programming language.
+Java is another programming language.
+Python is commonly used for AI.
+
+documents/file2.txt
+Machine learning can be implemented using Python.
+
+documents/file3.txt
+HTML is used to structure websites.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 127 | Occurrences: 1 | python main.py
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 129 | Occurrences: 4 | === Multi-File Keyword Search Tool ===
+Type 'exit' to close the program.
+
+Enter a keyword: python
+
+Files checked: 3
+
+Search results:
+1. file1.txt | Line 1
+   Python is a programming language.
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+
+Matching files: 2
+Total matches: 3
+
+Results saved to: results/search_results.txt
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 130 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 158 | Occurrences: 1 | The Multi-File Keyword Search Tool is a compact but complete example of a modular Python application. It solves a clear problem: finding a keyword across several text files without manually opening each file. The program validates user input, discovers text files, searches them line by line, records structured match data, displays useful statistics, saves a report, and handles common file-related errors.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 19 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 25 | Occurrences: 1 | The Multi-File Keyword Search Tool is a Python command-line application that allows a user to search for a specific keyword across multiple text files. Instead of opening files one by one, the program automatically scans every valid .txt file inside a predefined documents folder, reads each file line by line, finds lines containing the requested keyword, and presents the matching information in a clear format.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 3 | Occurrences: 1 | A modular Python command-line application for searching keywords across multiple text files
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 79 | Occurrences: 2 | This removes leading/trailing whitespace and converts the input to lowercase. For example, "  PYTHON  " becomes "python".
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 91 | Occurrences: 1 | {
+    'filename': 'file1.txt',
+    'line_number': 12,
+    'text': 'Python is widely used for AI.'
+}
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 104 | Occurrences: 1 | The application uses Python substring membership rather than exact-word matching, regular expressions, or semantic search. Therefore, a keyword matches whenever its characters appear anywhere inside the lowercased line.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 107 | Occurrences: 1 | All matches are collected in a Python list. Each list element is a dictionary containing three fields:
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 118 | Occurrences: 1 | 1. file1.txt | Line 3
+   Python is commonly used for AI.
+
+Matching files: 1
+Total matches: 1
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 121 | Occurrences: 4 | MULTI-FILE KEYWORD SEARCH RESULTS
+========================================
+Keyword: python
+Searched at: 2026-08-15 08:30:00
+Matching files: 2
+Total matches: 3
+
+1. file1.txt | Line 1
+   Python is a programming language.
+
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 125 | Occurrences: 3 | documents/file1.txt
+Python is a programming language.
+Java is another programming language.
+Python is commonly used for AI.
+
+documents/file2.txt
+Machine learning can be implemented using Python.
+
+documents/file3.txt
+HTML is used to structure websites.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 127 | Occurrences: 1 | python main.py
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 129 | Occurrences: 4 | === Multi-File Keyword Search Tool ===
+Type 'exit' to close the program.
+
+Enter a keyword: python
+
+Files checked: 3
+
+Search results:
+1. file1.txt | Line 1
+   Python is a programming language.
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+
+Matching files: 2
+Total matches: 3
+
+Results saved to: results/search_results.txt
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 130 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 158 | Occurrences: 1 | The Multi-File Keyword Search Tool is a compact but complete example of a modular Python application. It solves a clear problem: finding a keyword across several text files without manually opening each file. The program validates user input, discovers text files, searches them line by line, records structured match data, displays useful statistics, saves a report, and handles common file-related errors.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 19 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 25 | Occurrences: 1 | The Multi-File Keyword Search Tool is a Python command-line application that allows a user to search for a specific keyword across multiple text files. Instead of opening files one by one, the program automatically scans every valid .txt file inside a predefined documents folder, reads each file line by line, finds lines containing the requested keyword, and presents the matching information in a clear format.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 3 | Occurrences: 1 | A modular Python command-line application for searching keywords across multiple text files
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 79 | Occurrences: 2 | This removes leading/trailing whitespace and converts the input to lowercase. For example, "  PYTHON  " becomes "python".
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 91 | Occurrences: 1 | {
+    'filename': 'file1.txt',
+    'line_number': 12,
+    'text': 'Python is widely used for AI.'
+}
+file3_web_development.pdf | Page 1 | Occurrences: 1 | Many back-end services are written in languages such as JavaScript, Java, Ruby, or Python, using
+file3_web_development.pdf | Page 1 | Occurrences: 1 | Python-based frameworks such as Django and Flask are popular choices for building back-end APIs
+
+======================================================================
+Search keyword: python
+Timestamp: 2026-08-17 10:52:35
+Documents folder: documents
+Exact-word search: True
+Matching files: 3
+Total matches: 48
+======================================================================
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 104 | Occurrences: 1 | The application uses Python substring membership rather than exact-word matching, regular expressions, or semantic search. Therefore, a keyword matches whenever its characters appear anywhere inside the lowercased line.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 107 | Occurrences: 1 | All matches are collected in a Python list. Each list element is a dictionary containing three fields:
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 118 | Occurrences: 1 | 1. file1.txt | Line 3
+   Python is commonly used for AI.
+
+Matching files: 1
+Total matches: 1
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 121 | Occurrences: 4 | MULTI-FILE KEYWORD SEARCH RESULTS
+========================================
+Keyword: python
+Searched at: 2026-08-15 08:30:00
+Matching files: 2
+Total matches: 3
+
+1. file1.txt | Line 1
+   Python is a programming language.
+
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 125 | Occurrences: 3 | documents/file1.txt
+Python is a programming language.
+Java is another programming language.
+Python is commonly used for AI.
+
+documents/file2.txt
+Machine learning can be implemented using Python.
+
+documents/file3.txt
+HTML is used to structure websites.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 127 | Occurrences: 1 | python main.py
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 129 | Occurrences: 4 | === Multi-File Keyword Search Tool ===
+Type 'exit' to close the program.
+
+Enter a keyword: python
+
+Files checked: 3
+
+Search results:
+1. file1.txt | Line 1
+   Python is a programming language.
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+
+Matching files: 2
+Total matches: 3
+
+Results saved to: results/search_results.txt
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 130 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 158 | Occurrences: 1 | The Multi-File Keyword Search Tool is a compact but complete example of a modular Python application. It solves a clear problem: finding a keyword across several text files without manually opening each file. The program validates user input, discovers text files, searches them line by line, records structured match data, displays useful statistics, saves a report, and handles common file-related errors.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 19 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 25 | Occurrences: 1 | The Multi-File Keyword Search Tool is a Python command-line application that allows a user to search for a specific keyword across multiple text files. Instead of opening files one by one, the program automatically scans every valid .txt file inside a predefined documents folder, reads each file line by line, finds lines containing the requested keyword, and presents the matching information in a clear format.
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 3 | Occurrences: 1 | A modular Python command-line application for searching keywords across multiple text files
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 79 | Occurrences: 2 | This removes leading/trailing whitespace and converts the input to lowercase. For example, "  PYTHON  " becomes "python".
+Multi_File_Keyword_Search_Tool_Project_Documentation (1).docx | Paragraph 91 | Occurrences: 1 | {
+    'filename': 'file1.txt',
+    'line_number': 12,
+    'text': 'Python is widely used for AI.'
+}
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 104 | Occurrences: 1 | The application uses Python substring membership rather than exact-word matching, regular expressions, or semantic search. Therefore, a keyword matches whenever its characters appear anywhere inside the lowercased line.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 107 | Occurrences: 1 | All matches are collected in a Python list. Each list element is a dictionary containing three fields:
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 118 | Occurrences: 1 | 1. file1.txt | Line 3
+   Python is commonly used for AI.
+
+Matching files: 1
+Total matches: 1
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 121 | Occurrences: 4 | MULTI-FILE KEYWORD SEARCH RESULTS
+========================================
+Keyword: python
+Searched at: 2026-08-15 08:30:00
+Matching files: 2
+Total matches: 3
+
+1. file1.txt | Line 1
+   Python is a programming language.
+
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 125 | Occurrences: 3 | documents/file1.txt
+Python is a programming language.
+Java is another programming language.
+Python is commonly used for AI.
+
+documents/file2.txt
+Machine learning can be implemented using Python.
+
+documents/file3.txt
+HTML is used to structure websites.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 127 | Occurrences: 1 | python main.py
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 129 | Occurrences: 4 | === Multi-File Keyword Search Tool ===
+Type 'exit' to close the program.
+
+Enter a keyword: python
+
+Files checked: 3
+
+Search results:
+1. file1.txt | Line 1
+   Python is a programming language.
+2. file1.txt | Line 3
+   Python is commonly used for AI.
+3. file2.txt | Line 1
+   Machine learning can be implemented using Python.
+
+Matching files: 2
+Total matches: 3
+
+Results saved to: results/search_results.txt
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 130 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 158 | Occurrences: 1 | The Multi-File Keyword Search Tool is a compact but complete example of a modular Python application. It solves a clear problem: finding a keyword across several text files without manually opening each file. The program validates user input, discovers text files, searches them line by line, records structured match data, displays useful statistics, saves a report, and handles common file-related errors.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 19 | Occurrences: 1 | 11. Python Concepts Demonstrated
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 25 | Occurrences: 1 | The Multi-File Keyword Search Tool is a Python command-line application that allows a user to search for a specific keyword across multiple text files. Instead of opening files one by one, the program automatically scans every valid .txt file inside a predefined documents folder, reads each file line by line, finds lines containing the requested keyword, and presents the matching information in a clear format.
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 3 | Occurrences: 1 | A modular Python command-line application for searching keywords across multiple text files
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 79 | Occurrences: 2 | This removes leading/trailing whitespace and converts the input to lowercase. For example, "  PYTHON  " becomes "python".
+Multi_File_Keyword_Search_Tool_Project_Documentation.docx | Paragraph 91 | Occurrences: 1 | {
+    'filename': 'file1.txt',
+    'line_number': 12,
+    'text': 'Python is widely used for AI.'
+}
+file3_web_development.pdf | Page 1 | Occurrences: 1 | Many back-end services are written in languages such as JavaScript, Java, Ruby, or Python, using
+file3_web_development.pdf | Page 1 | Occurrences: 1 | Python-based frameworks such as Django and Flask are popular choices for building back-end APIs
