@@ -91,20 +91,28 @@ def parse_json_response(response):
     return json.loads(response)   #Take JSON text and load it into Python.
 
 
-def ask_json_question(temperature):  #This function tests the JSON requirement.
+def ask_json_question(temperature):
+    # Ask the user for the question that should receive a JSON response
+    json_question = input("Enter your question for JSON response: ").strip()
 
+    # Reject an empty JSON question
+    if not json_question:
+        print("Please enter a question.")
+        return
 
-#We're specifically instructing the AI to Return the answer as JSON
-    json_prompt = """           
-Explain Python variables for a beginner.
+    # Tell the AI to return the answer in JSON format
+    json_prompt = f"""
+Answer the following study question for a beginner:
+
+{json_question}
 
 Return ONLY valid JSON using exactly this structure:
 
-{
-    "topic": "Python Variables",
-    "explanation": "A simple explanation",
-    "example": "A short Python example"
-}
+{{
+    "question": "The question asked by the student",
+    "answer": "A simple and clear answer",
+    "example": "A short example if appropriate"
+}}
 
 Do not add Markdown or any text outside the JSON.
 """
@@ -121,27 +129,22 @@ Do not add Markdown or any text outside the JSON.
     ]
 
     try:
-        response = get_response(messages, temperature) #First we ask the AI for a response.
-        data = parse_json_response(response) #Then we parse it.
+        # Ask the AI for a response
+        response = get_response(messages, temperature)
+
+        # Parse the JSON response into a Python dictionary
+        data = parse_json_response(response)
 
         print("\nParsed JSON result:")
-        print(f"Topic: {data['topic']}") #gets the topic.
-        print(f"Explanation: {data['explanation']}") #gets the explanation.
-        print(f"Example: {data['example']}")#gets the example.
-
-  #ERROR HANDLING 
+        print(data)
 
     except json.JSONDecodeError:
         print("\nThe AI did not return valid JSON.")
         print("Raw response:")
         print(response)
 
-    except KeyError:
-        print("\nThe JSON response did not contain the required fields.")
-
     except Exception as error:
         print(f"\nError: {error}")
-
 
 def main():
     print("=" * 50)
