@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "text": "Students must maintain at least 75 percent attendance in each course.",
+        "source": "University Attendance Policy"
+    },
+    {
+        "id": 2,
+        "text": "Students with attendance below 75 percent may be prevented from taking the final examination.",
+        "source": "University Attendance Policy"
+    },
+    {
+        "id": 3,
+        "text": "Students should submit assignments before the deadline given by the instructor.",
+        "source": "Academic Rules"
+    },
+    {
+        "id": 4,
+        "text": "Late assignments may receive reduced marks according to the course policy.",
+        "source": "Academic Rules"
+    },
+    {
+        "id": 5,
+        "text": "Students must bring their university identification card when entering an examination hall.",
+        "source": "Examination Rules"
+    },
+    {
+        "id": 6,
+        "text": "Mobile phones and other electronic devices are not allowed during examinations.",
+        "source": "Examination Rules"
+    },
+    {
+        "id": 7,
+        "text": "Students can borrow books from the university library using their valid student card.",
+        "source": "Library Policy"
+    },
+    {
+        "id": 8,
+        "text": "Library books should be returned on or before the specified due date.",
+        "source": "Library Policy"
+    },
+    {
+        "id": 9,
+        "text": "Students should contact the course instructor when they have questions about course requirements.",
+        "source": "Course FAQ"
+    },
+    {
+        "id": 10,
+        "text": "The university provides online learning resources through its student portal.",
+        "source": "Student Services"
+    }
+]
