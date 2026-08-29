@@ -1,0 +1,62 @@
+[
+  {
+    "id": "kb001",
+    "text": "Python is a high-level programming language used for general-purpose programming.",
+    "source": "Python Basics",
+    "category": "Programming"
+  },
+  {
+    "id": "kb002",
+    "text": "A Python variable is a name that refers to a value stored in memory.",
+    "source": "Python Basics",
+    "category": "Programming"
+  },
+  {
+    "id": "kb003",
+    "text": "A function is a reusable block of code designed to perform a specific task.",
+    "source": "Python Functions",
+    "category": "Programming"
+  },
+  {
+    "id": "kb004",
+    "text": "An embedding represents text as a numerical vector that captures its semantic meaning.",
+    "source": "AI Fundamentals",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "id": "kb005",
+    "text": "Semantic search finds documents based on meaning rather than only matching exact keywords.",
+    "source": "AI Fundamentals",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "id": "kb006",
+    "text": "A language model can process text and generate predictions based on patterns learned from data.",
+    "source": "AI Fundamentals",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "id": "kb007",
+    "text": "A database is used to store and organize data so that it can be retrieved efficiently.",
+    "source": "Database Basics",
+    "category": "Databases"
+  },
+  {
+    "id": "kb008",
+    "text": "A primary key uniquely identifies each record in a database table.",
+    "source": "Database Basics",
+    "category": "Databases"
+  },
+  {
+    "id": "kb009",
+    "text": "SQL is a language used to query and manage data stored in relational databases.",
+    "source": "Database Basics",
+    "category": "Databases"
+  },
+  {
+    "id": "kb010",
+    "text": "Git is a version control system that tracks changes to files and helps developers collaborate.",
+    "source": "Software Development",
+    "category": "Software Development"
+  }
+]
