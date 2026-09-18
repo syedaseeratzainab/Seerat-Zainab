@@ -1,2 +1,7 @@
 Multi_File_Keyword_Search/.venv/
 Multi_File_Keyword_Search/__pycache__/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
