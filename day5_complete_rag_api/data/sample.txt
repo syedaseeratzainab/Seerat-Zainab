@@ -1,0 +1,11 @@
+Retrieval-Augmented Generation, commonly called RAG, combines information retrieval with language generation.
+
+A RAG system first searches a knowledge base for relevant information. The retrieved document chunks are then provided to a language model so that it can generate an answer using the retrieved context.
+
+FastAPI is a Python framework used for building web APIs. It provides automatic API documentation through Swagger UI.
+
+Embeddings are numerical representations of text. Similar meanings can have similar vector representations.
+
+A vector database stores embeddings and allows similarity searches. Semantic search compares the meaning of a query with stored document embeddings.
+
+The top_k parameter controls how many relevant document chunks are returned by a search operation.

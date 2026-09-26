@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 .env
 vector_db/
+
+day5_complete_rag_api/chroma_db/
+day5_complete_rag_api/vector_db/
