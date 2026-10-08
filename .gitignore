@@ -1,11 +1,40 @@
+# Existing project files
 Multi_File_Keyword_Search/.venv/
 Multi_File_Keyword_Search/__pycache__/
 .venv/
 venv/
 __pycache__/
 *.pyc
-.env
 vector_db/
-
 day5_complete_rag_api/chroma_db/
 day5_complete_rag_api/vector_db/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node / Railway frontend
+node_modules/
+dist/
+dist-ssr/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor / OS files
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
